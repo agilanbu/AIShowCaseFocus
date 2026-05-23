@@ -27,7 +27,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.aishowcase.theme.*
+import com.agilanbu.aishowcasefocus.theme.*
+import com.agilanbu.aishowcasefocus.ui.home.AITopBar
+import com.agilanbu.aishowcasefocus.ui.home.CodeBlock
+import com.agilanbu.aishowcasefocus.ui.home.ConceptCard
+import com.agilanbu.aishowcasefocus.ui.home.SectionLabel
+import com.agilanbu.aishowcasefocus.ui.home.StepRow
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -18,7 +18,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.aishowcase.theme.*
+import com.agilanbu.aishowcasefocus.theme.*
+import com.agilanbu.aishowcasefocus.ui.home.AITopBar
+import com.agilanbu.aishowcasefocus.ui.home.ConceptCard
+import com.agilanbu.aishowcasefocus.ui.home.SectionLabel
 
 @Composable
 fun OnDeviceAIScreen(navController: NavController) {

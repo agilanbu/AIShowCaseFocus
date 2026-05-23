@@ -30,7 +30,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.aishowcase.theme.*
+import com.agilanbu.aishowcasefocus.theme.*
+import com.agilanbu.aishowcasefocus.ui.home.AITopBar
+import com.agilanbu.aishowcasefocus.ui.home.CodeBlock
+import com.agilanbu.aishowcasefocus.ui.home.ConceptCard
+import com.agilanbu.aishowcasefocus.ui.home.SectionLabel
+import com.agilanbu.aishowcasefocus.ui.home.StepRow
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import com.google.mlkit.vision.text.latin.TextRecognizerOptions
@@ -39,6 +44,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+//import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.tasks.await
 
 // ── ViewModel ──────────────────────────────────────────────────────────────

@@ -26,7 +26,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.aishowcase.theme.*
+import com.agilanbu.aishowcasefocus.theme.*
+import com.agilanbu.aishowcasefocus.ui.home.AITopBar
+import com.agilanbu.aishowcasefocus.ui.home.CodeBlock
+import com.agilanbu.aishowcasefocus.ui.home.ConceptCard
+import com.agilanbu.aishowcasefocus.ui.home.SectionLabel
+import com.agilanbu.aishowcasefocus.ui.home.StepRow
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -235,7 +240,9 @@ fun MediaPipeScreen(navController: NavController, vm: MediaPipeViewModel = viewM
             // Start / Stop button
             Button(
                 onClick = { if (isRunning) vm.stopDetection() else vm.startDetection() },
-                modifier = Modifier.fillMaxWidth().height(50.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
                 shape = RoundedCornerShape(12.dp),
                 colors = ButtonDefaults.buttonColors(
                     containerColor = if (isRunning) AccentCoral else accent

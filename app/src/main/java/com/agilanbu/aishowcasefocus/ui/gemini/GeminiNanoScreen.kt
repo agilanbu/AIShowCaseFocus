@@ -1,5 +1,10 @@
 package com.agilanbu.aishowcasefocus.ui.gemini
 
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -24,7 +29,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.aishowcase.theme.*
+import com.agilanbu.aishowcasefocus.theme.CardBorder
+import com.agilanbu.aishowcasefocus.theme.CardSurface
+import com.agilanbu.aishowcasefocus.theme.DarkSurface
+import com.agilanbu.aishowcasefocus.theme.NeonGreen
+import com.agilanbu.aishowcasefocus.theme.TextMuted
+import com.agilanbu.aishowcasefocus.theme.TextPrimary
+import com.agilanbu.aishowcasefocus.ui.home.AITopBar
+import com.agilanbu.aishowcasefocus.theme.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

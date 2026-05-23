@@ -24,8 +24,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.aishowcase.navigation.Routes
-import com.aishowcase.theme.*
+import com.agilanbu.aishowcasefocus.navigation.Routes
+import com.agilanbu.aishowcasefocus.theme.*
 import kotlinx.coroutines.delay
 
 // ── Data model for each AI feature card ───────────────────────────────────
@@ -220,7 +220,9 @@ fun HomeScreen(navController: NavController) {
                     label = "cardOffset$index"
                 )
 
-                Box(modifier = Modifier.offset(y = offsetY).alpha(alpha)) {
+                Box(modifier = Modifier
+                    .offset(y = offsetY)
+                    .alpha(alpha)) {
                     AIFeatureCard(
                         feature = feature,
                         onClick = { navController.navigate(feature.route) }
